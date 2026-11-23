@@ -1,0 +1,8 @@
+Control and support other computers remotely, using your own server if you like
+
+RustDesk lets you see and control another computer's screen over the internet or a local network, for helping friends and family, supporting customers, or reaching your own machines from anywhere. It works without setup through public relay servers, and you can run your own server so your connections and data stay under your control.
+
+- Remote screen control with keyboard, mouse and multi-monitor support
+- File transfer between the local and remote computer
+- TCP tunneling to forward ports such as SSH or RDP
+- Works out of the box, or with your own rendezvous and relay server
