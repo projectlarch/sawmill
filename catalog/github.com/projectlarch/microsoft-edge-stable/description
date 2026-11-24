@@ -1,0 +1,10 @@
+Browse the web with Microsoft's Chromium-based browser
+
+Microsoft Edge is Microsoft's web browser, built on Chromium. It syncs your favorites, passwords and history with a Microsoft account across devices and runs extensions from the Chrome Web Store. This is an unofficial AppImage that repacks Microsoft's own Linux package unchanged and is rebuilt daily when a new Stable version comes out.
+
+- Sync favorites, passwords, history and open tabs with a Microsoft account
+- Runs extensions from the Chrome Web Store and Microsoft's add-ons store
+- Tracking prevention with selectable strictness levels
+- Vertical tabs, tab groups and Collections for organizing pages
+- Immersive Reader and Read Aloud for distraction-free reading
+- Copilot in the sidebar
