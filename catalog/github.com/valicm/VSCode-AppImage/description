@@ -1,0 +1,10 @@
+Edit, debug and manage code with a lightweight editor and huge extension library
+
+Visual Studio Code is Microsoft's code editor. It combines a fast, lightweight editor with features usually found in full IDEs, such as code completion, debugging and built-in Git, and grows through a large marketplace of extensions for almost any language or workflow. This is an unofficial AppImage that repacks Microsoft's own Linux release, rebuilt automatically when a new stable version comes out.
+
+- IntelliSense code completion and navigation for many languages
+- Built-in debugger with breakpoints, call stacks and an interactive console
+- Git integration for staging, committing, diffs and branches
+- Integrated terminal inside the editor window
+- Thousands of extensions for languages, themes, linters and tools
+- AI chat and coding assistance with GitHub Copilot
