@@ -1,0 +1,9 @@
+Container-aware terminal with tabs, profiles and a clean GNOME design
+
+Ptyxis is the terminal of the GNOME desktop, built for people who work in containers. It knows about Podman, Toolbox and Distrobox, so new tabs can open straight into the container you were using. This is an unofficial AppImage build of Ptyxis that runs on any Linux distribution.
+
+- Open tabs and windows inside Podman, Toolbox or Distrobox containers
+- Tab overview to see and switch between all open terminals
+- Profiles with their own colors, shell and container
+- Many built-in color palettes that follow light and dark mode
+- Highlights tabs connected over SSH or running as root
