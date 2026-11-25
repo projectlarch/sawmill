@@ -1,0 +1,9 @@
+Modern terminal with GPU rendering, font ligatures and inline images
+
+Contour is a terminal emulator aimed at everyday use as well as at developers who want the latest terminal features. It renders with the GPU, supports font ligatures and emoji, and can display images in the terminal. This is an unofficial AppImage build of Contour that runs on any Linux distribution.
+
+- GPU-accelerated rendering with font ligatures and emoji
+- Inline images through the Sixel and iTerm2 image protocols
+- Vi-like input mode for selecting and copying text with the keyboard
+- Jump between shell prompts with shell integration marks
+- Profiles and color schemes that switch at runtime
