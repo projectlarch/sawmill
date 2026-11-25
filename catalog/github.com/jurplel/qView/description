@@ -1,0 +1,10 @@
+View images in a clean window with no toolbars or distractions
+
+qView is an image viewer built around minimalism: the window shows just your image and a title bar, with everything else tucked into a right-click menu and keyboard shortcuts. It opens almost instantly and switches between images quickly while using little memory and CPU.
+
+- Distraction-free interface with only the image and a title bar
+- Fast startup and multithreaded preloading of neighbouring images
+- Controls for animated GIFs
+- Rotate and mirror images
+- Recent file history and many configurable preferences
+- Supports common formats including JPEG, PNG, GIF, WebP, TIFF and BMP
