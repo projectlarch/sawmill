@@ -1,0 +1,9 @@
+Minimal, lightweight terminal for X with a tiny code base
+
+st is a small terminal emulator for the X Window System from the suckless community. It aims to do one thing well, with very little code and no runtime configuration: settings are changed in the source before building. This is an unofficial AppImage build of st that runs on any Linux distribution.
+
+- Very small and fast, with low memory use
+- 256 colors and true color
+- Unicode and wide character support
+- Clipboard handling and mouse selection
+- Works with any X11 window manager
