@@ -1,0 +1,9 @@
+Sci-fi themed terminal with system monitors, file browser and on-screen keyboard
+
+EdexUi-2026 is a maintained continuation of eDEX-UI, a fullscreen terminal and system monitor styled after science-fiction movie interfaces. It keeps the original look while updating the app to run well on current Linux desktops.
+
+- Fullscreen terminal with multiple tabs
+- Live system information such as CPU, memory, processes and network traffic
+- World map showing network connections
+- Built-in file browser and on-screen keyboard
+- Application manager for launching installed programs
