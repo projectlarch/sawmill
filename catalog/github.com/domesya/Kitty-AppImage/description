@@ -1,0 +1,9 @@
+Fast, scriptable terminal with GPU rendering, tabs and tiled windows
+
+kitty is a terminal emulator for people who live on the command line. It draws text with the GPU for low latency, can show several terminals side by side in one window, and can be controlled from scripts or the shell. This is an unofficial AppImage build of kitty that runs on any Linux distribution.
+
+- GPU-accelerated rendering with ligatures, emoji and true color
+- Tabs and multiple tiled windows with several layouts
+- Graphics protocol for showing images directly in the terminal
+- Small add-on programs called kittens, such as an image viewer and a diff tool
+- Remote control from scripts, and shell integration for bash, zsh and fish
