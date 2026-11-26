@@ -582,6 +582,21 @@ set_context (gpointer ctx, const char *name, const char *value)
 static void clean_launcher_env (GSubprocessLauncher *l) { clean_env (set_launcher, l); }
 static void clean_launch_context (GAppLaunchContext *ctx) { clean_env (set_context, ctx); }
 
+/* GNOME finds the apps for a file type through mimeinfo.cache in the launcher's folder, not the
+ * launchers' MimeType lines, so rebuild it after adding or removing one. Best effort, not waited for:
+ * without update-desktop-database the app still installs, it just is not offered for its file types. */
+static void
+refresh_mime_cache (const char *desktop_file)
+{
+  g_autoptr (GSubprocessLauncher) l = g_subprocess_launcher_new (G_SUBPROCESS_FLAGS_STDOUT_SILENCE |
+                                                                 G_SUBPROCESS_FLAGS_STDERR_SILENCE);
+  g_autoptr (GSubprocess) proc = NULL;
+  g_autofree char *dir = g_path_get_dirname (desktop_file);
+
+  clean_launcher_env (l);
+  proc = g_subprocess_launcher_spawn (l, NULL, "update-desktop-database", "-q", dir, NULL);
+}
+
 /* ---------- extracting the .desktop file and icon ---------- */
 
 static void
@@ -910,6 +925,7 @@ install_thread (GTask *task, gpointer source, gpointer data, GCancellable *cance
   }
   if (!copy_file (icon_src, icon_dest, &error) || !write_launcher (j, meta, icon_dest, &error))
     goto fail;
+  refresh_mime_cache (j->desktop);
   remove_tree (work);
   g_file_set_contents (version_file, rel->tag, -1, NULL);
 
@@ -1025,6 +1041,7 @@ store_uninstall (StoreApp *a, GError **error)
       g_set_error (error, G_IO_ERROR, g_io_error_from_errno (errno), "Cannot remove %s: %s", desktop, g_strerror (errno));
       return FALSE;
     }
+  refresh_mime_cache (desktop);
   if (!remove_tree (dir))
     {
       g_set_error (error, G_IO_ERROR, G_IO_ERROR_FAILED, "Cannot remove %s", dir);
