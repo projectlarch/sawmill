@@ -1,0 +1,10 @@
+Play, mod and host voxel sandbox games in open block worlds
+
+Luanti, formerly known as Minetest, is a voxel game engine for exploring, building and surviving in block worlds. It runs games you install from its built-in content browser, and you can play alone, with friends on your local network, or on public online servers.
+
+This AppImage is an unofficial build of Luanti for Linux systems whose package repositories ship outdated versions. It runs on anything about as new as Debian 11 and needs working OpenGL drivers.
+
+- Download games, mods and texture packs from the built-in content browser
+- Play single player or join and host multiplayer servers
+- Create your own games and mods with a Lua scripting API
+- Rebind every control in the settings
